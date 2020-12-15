@@ -15,6 +15,11 @@
           {{ rightButtonText }}
         </button>
       </a>
+      <a v-if="extraButtonHref" :href="extraButtonHref" target="_blank">
+        <button type="button" class="btn btn-outline-dark">
+          {{ extraButtonText }}
+        </button>
+      </a>
     </div>
   </card>
 </template>
@@ -29,7 +34,9 @@ export default {
     leftButtonHref: { type: String, default: '' },
     leftButtonText: { type: String, default: '' },
     rightButtonHref: { type: String, default: '' },
-    rightButtonText: { type: String, default: '' }
+    rightButtonText: { type: String, default: '' },
+    extraButtonHref: { type: String, default: '' },
+    extraButtonText: { type: String, default: '' }
   }
 }
 </script>

@@ -164,10 +164,12 @@
             left-button-text="Check it out!"
             right-button-href="https://github.com/justingruen/recordtoprecords/tree/master"
             right-button-text="View on Github"
+            extra-button-href="cs-sce.pdf"
+            extra-button-text="Read about it"
           >
             Record Top Records is a full e-commerce application developed for my
             computer science major SCE. It was developed using React, Nodejs,
-            Google Firebase, and Material-UI. Users can create their own
+            Google Firebase, Material-UI, and Stripe. Users can create their own
             accounts, view the product catalog, add items to the cart, and more.
           </project-card>
         </div>
@@ -335,9 +337,9 @@ export default {
         'After being from promoted from Student Analyst, I was able to take on a more leadership role as well as responsibility. ' +
         'I shifted from working primarily with Python and Arcpy to also working on data management, data visualization,' +
         "and more in-depth backend development for our GeoEvent Server! Here's what I put on my resume about it: <br><br>" +
-        '<ul style="text-align: left;"><li>Design, develop, and deploy web applications for the Maryland Highway Safety Office using Javascript, React, and Arcade to assist their work in decreasing crash rates</li>' +
-        '<li>Work closely with the GIS Senior Developer in the back-end development and implementation of a Geoevent Server enabling real-time event-based data streams to be easily processed and filtered</li>' +
-        '<li>Responsible for developing back-end software utilizing Python, SQL, and Microsoft’s SQL Server Management Studio to easily and automatically store large amounts of incoming data within databases</li>' +
+        '<ul style="text-align: left;"><li>Designed, developed, and deployed web applications for the Maryland Highway Safety Office using Javascript, React, and Arcade to assist their work in decreasing crash rates.</li>' +
+        '<li>Worked closely with the GIS Senior Developer in the back-end development and implementation of a Geo event Server enabling real-time event-based data streams to be regularly processed and filtered.</li>' +
+        '<li>Responsible for developing back-end software using Python, SQL, and Microsoft’s SQL Server Management Studio to easily and automatically store large amounts of incoming data within databases.</li>' +
         '</p>'
       Popup.fire({
         html: innerHTML,
@@ -352,10 +354,10 @@ export default {
         'a large amount of data processing. During the summer of 2020 I began working with Sean Lynn, the senior applications developer, ' +
         ' and shifted to developing backend data-processing for our GeoEvent server. ' +
         " Here's what I put on my resume about it:<br><br>" +
-        '<ul style="text-align: left;"><li>Developed a Python Script utilizing Arcpy and Pandas to process and query incoming XML data from the Maryland Highway Safety Office</li>' +
-        '<li>Solely responsible for creating, maintaining, and continuously expanding a toolbox containing user-friendly geoprocessing tools and software (20+) that sifts, analyzes, and presents data findings in multiple formats</li>' +
-        '<li>Collaborated and communicated with GIS Analysts to increase workflow through the development and execution of Python applications and services to eliminate time redundancies</li>' +
-        '<li>Improved existing systems by analyzing areas of modification</li>' +
+        '<ul style="text-align: left;"><li>Developed a Python Script using Arcpy and Pandas to process and query incoming XML data from the Maryland Highway Safety Office.</li>' +
+        '<li>Solely responsible for creating, maintaining, and continuously expanding a toolbox containing user-friendly geoprocessing tools and software (20+) that sifts, analyzes, and presents data findings in multiple formats.</li>' +
+        '<li>Collaborated and communicated with GIS Analysts to increase workflow through the development and execution of Python scripts to eliminate time redundancies.</li>' +
+        '<li>Improved existing scripts by analyzing areas of modification.</li>' +
         '</ul></p>'
       Popup.fire({
         html: innerHTML,
@@ -369,8 +371,8 @@ export default {
         'I was primarily responsible for overseeing the use of the equipment and helping   ' +
         "students use the equipment. Although it wasn't an official part of the internship, " +
         'I also worked with three other students to develop an online webpage ' +
-        'that allows students and professors to login with their school account and ' +
-        "schedule use of the equipment ahead of time to ensure it's available when they come in. " +
+        'that allows students and faculty (1200+) to login with their school account and ' +
+        'schedule use of the equipment ahead of time to create a hassle-free process. ' +
         'I did it with HTML, PHP, and SQL.​</p>'
       Popup.fire({
         html: innerHTML,
