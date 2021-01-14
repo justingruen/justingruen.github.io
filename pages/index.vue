@@ -9,7 +9,7 @@
     <div class="container">
       <div class="full-title">
         <div class="profile">
-          <img src="me.jpg" class="profile-pic" alt="Justin Gruen" />
+          <img src="../static/Me2.png" class="profile-pic" alt="Justin Gruen" />
         </div>
         <h1
           id="typing-title"
