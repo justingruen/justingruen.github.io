@@ -168,9 +168,10 @@
             extra-button-text="Read about it"
           >
             Record Top Records is a full e-commerce application developed for my
-            computer science major SCE. It was developed using React, Nodejs,
-            Google Firebase, Material-UI, and Stripe. Users can create their own
-            accounts, view the product catalog, add items to the cart, and more.
+            computer science major SCE. The software was developed using React,
+            Nodejs, Google Firebase, Material-UI, and Stripe. Users can create
+            their own accounts, view the product catalog, add items to the cart,
+            and more.
           </project-card>
         </div>
         <div class="row">
@@ -229,15 +230,17 @@
         </div>
         <div>
           <project-card
-            title="Twitter Notification App"
+            title="Video Us"
             left-button-href=""
             left-button-text="Under Construction!"
             right-button-href=""
             right-button-text=""
           >
-            An android application utilizing the Twitter API that allows the
-            user to login to their services and select specific accounts to
-            recieve tweet notifications from.
+            I frequently enjoy watching movies with friends, but having to
+            manually sync our videos can get very annoying the more of us there
+            are. Instead, Video Us is an application that allows users to create
+            rooms, invite friends, and synchronously play videos at the touch of
+            a button.
           </project-card>
         </div>
 
@@ -333,14 +336,15 @@ export default {
 
     popupGJM() {
       const innerHTML =
-        '<p>Working as a Journeyman at the Washington College GIS Labs is my current and most interesting internship! ' +
+        '<p>Working as a Journeyman at the Washington College GIS Labs was my most recent and interesting internship! ' +
         'After being from promoted from Student Analyst, I was able to take on a more leadership role as well as responsibility. ' +
         'I shifted from working primarily with Python and Arcpy to also working on data management, data visualization,' +
         "and more in-depth backend development for our GeoEvent Server! Here's what I put on my resume about it: <br><br>" +
-        '<ul style="text-align: left;"><li>Designed, developed, and deployed web applications for the Maryland Highway Safety Office using Javascript, React, and Arcade to assist their work in decreasing crash rates.</li>' +
-        '<li>Worked closely with the GIS Senior Developer in the back-end development and implementation of a Geo event Server enabling real-time event-based data streams to be regularly processed and filtered.</li>' +
-        '<li>Responsible for developing back-end software using Python, SQL, and Microsoft’s SQL Server Management Studio to easily and automatically store large amounts of incoming data within databases.</li>' +
-        '</p>'
+        '<ul style="text-align: left;"><li>Introduced a ~5% increase in data retention by implementing a new script to process and query incoming XML data from the Maryland Department of Transportation.</li>' +
+        '<li>Assisted with working on countermeasures to reduce Maryland statewide crashes through the implementation of a Geographic Information System (GIS) web application that allows any user to process, filter, and view specific crash data.</li>' +
+        '<li>Worked closely with the GIS Applications Developer/Programmer in the back-end development and implementation of a GeoEvent server enabling real-time event-based data streams to be regularly process and filtered.</li>' +
+        '<li>Developed back-end software using Python and SQL to automatically store any incoming data with MySQL databases.</li>' +
+        '</ul></p>'
       Popup.fire({
         html: innerHTML,
         imageUrl: ''
@@ -354,10 +358,9 @@ export default {
         'a large amount of data processing. During the summer of 2020 I began working with Sean Lynn, the senior applications developer, ' +
         ' and shifted to developing backend data-processing for our GeoEvent server. ' +
         " Here's what I put on my resume about it:<br><br>" +
-        '<ul style="text-align: left;"><li>Developed a Python Script using Arcpy and Pandas to process and query incoming XML data from the Maryland Highway Safety Office.</li>' +
-        '<li>Solely responsible for creating, maintaining, and continuously expanding a toolbox containing user-friendly geoprocessing tools and software (20+) that sifts, analyzes, and presents data findings in multiple formats.</li>' +
-        '<li>Collaborated and communicated with GIS Analysts to increase workflow through the development and execution of Python scripts to eliminate time redundancies.</li>' +
-        '<li>Improved existing scripts by analyzing areas of modification.</li>' +
+        '<ul style="text-align: left;"><li>Solely responsible for creating, maintaining, and continuously expanding a toolbox containing 20+ user-friendly geoprocessing tools and software that sifts, analyzes, and displays data findings in multiple formats.</li>' +
+        '<li>Increased deliverables production by ~10% by collaborating with GIS analysts to implement Python scripts to automate manual processes.</li>' +
+        '<li>Augmented UI options on existing geospatial analysis scripts to allow for more user flexibility.</li>' +
         '</ul></p>'
       Popup.fire({
         html: innerHTML,
@@ -373,7 +376,7 @@ export default {
         'I also worked with three other students to develop an online webpage ' +
         'that allows students and faculty (1200+) to login with their school account and ' +
         'schedule use of the equipment ahead of time to create a hassle-free process. ' +
-        'I did it with HTML, PHP, and SQL.​</p>'
+        'We did it with HTML, PHP, and SQL.​</p>'
       Popup.fire({
         html: innerHTML,
         imageUrl: ''
