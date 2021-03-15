@@ -65,9 +65,9 @@
                 <div class="row">
                   <div class="col-lg-4">
                     <div style="margin:1em;">
-                      <h5 class="card-subtitle">GIS Journeyman</h5>
+                      <h5 class="card-subtitle">GIS Junior Web Developer</h5>
                       <div class="card-text">
-                        August 2020 - Present
+                        August 2020 - December 2020
                       </div>
 
                       <div class="card-buttons">
@@ -83,7 +83,7 @@
                   </div>
                   <div class="col-lg-4">
                     <div style="margin:1em;">
-                      <h5 class="card-subtitle">GIS Student Analyst</h5>
+                      <h5 class="card-subtitle">GIS Junior Applications Developer</h5>
                       <div class="card-text">August 2019 - August 2020</div>
 
                       <div class="card-buttons">
@@ -101,7 +101,7 @@
                     <div style="margin:1em;">
                       <h5 class="card-subtitle">Ideaworks Consultant</h5>
                       <div class="card-text">
-                        August 2019 - Present
+                        August 2019 - December 2020
                       </div>
 
                       <div class="card-buttons">
@@ -214,6 +214,20 @@
             their journey.
           </project-card>
           <project-card
+            title="Video Us"
+            left-button-href="https://github.com/justingruen/videous"
+            left-button-text="View on Github"
+            right-button-href=""
+            right-button-text=""
+          >
+            I frequently enjoy watching movies with friends, and decided
+            to try creating my own video watching web app. Video Us is an 
+            application that allows users to create rooms, invite friends, 
+            and synchronously play videos at the touch of a button.
+          </project-card>
+        </div>
+        <div>
+          <project-card
             title="Headphone Price Tracker"
             left-button-href=""
             left-button-text="Under Construction!"
@@ -226,21 +240,6 @@
             user-submitted links, retrieve the current price, and provide
             various information to the user to help them make an informed
             decision.
-          </project-card>
-        </div>
-        <div>
-          <project-card
-            title="Video Us"
-            left-button-href=""
-            left-button-text="Under Construction!"
-            right-button-href=""
-            right-button-text=""
-          >
-            I frequently enjoy watching movies with friends, but having to
-            manually sync our videos can get very annoying the more of us there
-            are. Instead, Video Us is an application that allows users to create
-            rooms, invite friends, and synchronously play videos at the touch of
-            a button.
           </project-card>
         </div>
 
@@ -336,14 +335,13 @@ export default {
 
     popupGJM() {
       const innerHTML =
-        '<p>Working as a Journeyman at the Washington College GIS Labs was my most recent and interesting internship! ' +
-        'After being from promoted from Student Analyst, I was able to take on a more leadership role as well as responsibility. ' +
-        'I shifted from working primarily with Python and Arcpy to also working on data management, data visualization,' +
-        "and more in-depth backend development for our GeoEvent Server! Here's what I put on my resume about it: <br><br>" +
-        '<ul style="text-align: left;"><li>Introduced a ~5% increase in data retention by implementing a new script to process and query incoming XML data from the Maryland Department of Transportation.</li>' +
-        '<li>Assisted with working on countermeasures to reduce Maryland statewide crashes through the implementation of a Geographic Information System (GIS) web application that allows any user to process, filter, and view specific crash data.</li>' +
-        '<li>Worked closely with the GIS Applications Developer/Programmer in the back-end development and implementation of a GeoEvent server enabling real-time event-based data streams to be regularly process and filtered.</li>' +
-        '<li>Developed back-end software using Python and SQL to automatically store any incoming data with MySQL databases.</li>' +
+        '<p>Working as a junior web developer at the Washington College GIS Labs was my most recent and interesting internship! ' +
+        'After being from promoted from junior applications developer, I was able to work directly with the senior developer in a more leadership role. ' +
+        'I shifted from working primarily with Python and Arcpy to working with Javascript, React, and front end development,' +
+        "as well as more in-depth backend development for our GeoEvent Server! Here's what I put on my resume about it: <br><br>" +
+        '<ul style="text-align: left;"><li>Designed and built a vehicle crash tracker web page using React and the ArcGIS API, enabling emergency responders to easily process, filter, and view 15+ years of Maryland crash data.</li>' +
+        '<li>Prototyped a web application for authenticated users to submit and view locations in GeoJSON files using JavaScript, HTML, CSS, and the Google Maps API.</li>' +
+        '<li>Achieved a ~5% increase in data retention through a new script using Pandas to process and query incoming JSON data from the Maryland Department of Transportation.</li>' +
         '</ul></p>'
       Popup.fire({
         html: innerHTML,
@@ -353,14 +351,14 @@ export default {
 
     popupGSA() {
       const innerHTML =
-        '<p>My second internship was at the Washington College GIS Labs as a Student Analyst. I started out analyzing data ​' +
+        '<p>My second internship was at the Washington College GIS Labs as a junior applications developer. I started out analyzing data ​' +
         "using Python and Arcpy, Esri's Python library, and quickly moved to creating full scale python scripts to easily automate " +
         'a large amount of data processing. During the summer of 2020 I began working with Sean Lynn, the senior applications developer, ' +
-        ' and shifted to developing backend data-processing for our GeoEvent server. ' +
+        ' and shifted to developing backend data-processing and MySQL database storage for our GeoEvent server. ' +
         " Here's what I put on my resume about it:<br><br>" +
-        '<ul style="text-align: left;"><li>Solely responsible for creating, maintaining, and continuously expanding a toolbox containing 20+ user-friendly geoprocessing tools and software that sifts, analyzes, and displays data findings in multiple formats.</li>' +
-        '<li>Increased deliverables production by ~10% by collaborating with GIS analysts to implement Python scripts to automate manual processes.</li>' +
-        '<li>Augmented UI options on existing geospatial analysis scripts to allow for more user flexibility.</li>' +
+        '<ul style="text-align: left;"><li>Independently responsible for creating, maintaining, and continuously expanding a toolbox containing 20+ user-friendly geoprocessing Python tools and software that sifts, analyzes, and displays data findings in multiple formats.</li>' +
+        '<li>Collaborated with GIS analysts to automate manual processes and increase deliverables production by ~10%.</li>' +
+        '<li>Redesigned UI options on existing geospatial analysis scripts to adhere to a wider range of needs.</li>' +
         '</ul></p>'
       Popup.fire({
         html: innerHTML,
@@ -372,11 +370,8 @@ export default {
       const innerHTML =
         "<p>My first internship took place at my school's engineering center Ideaworks. " +
         'I was primarily responsible for overseeing the use of the equipment and helping   ' +
-        "students use the equipment. Although it wasn't an official part of the internship, " +
-        'I also worked with three other students to develop an online webpage ' +
-        'that allows students and faculty (1200+) to login with their school account and ' +
-        'schedule use of the equipment ahead of time to create a hassle-free process. ' +
-        'We did it with HTML, PHP, and SQL.​</p>'
+        "students use the engineering equipment.​ Although it wasn't an official part of the internship, " +
+        "I was also able to assist faculty in teaching students engineering principles through fun projects.</p>"
       Popup.fire({
         html: innerHTML,
         imageUrl: ''
