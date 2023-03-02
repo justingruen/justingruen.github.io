@@ -23,8 +23,7 @@ export default {
   methods: {
     getCurrentSong(callback) {
       const that = this
-      const url =
-        ''
+      const url = ''
       httpGetAsync(url, function(data) {
         const currentSong = JSON.parse(data)
         const theTrack = currentSong.recenttracks.track[0]

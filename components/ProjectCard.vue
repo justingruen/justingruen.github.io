@@ -48,5 +48,6 @@ export default {
 }
 
 .card-subtitle {
+  white-space: nowrap;
 }
 </style>

@@ -9,7 +9,7 @@
     <div class="container">
       <div class="full-title">
         <div class="profile">
-          <img src="../static/Me2.png" class="profile-pic" alt="Justin Gruen" />
+          <!-- <img src="../static/Me2.png" class="profile-pic" alt="Justin Gruen" /> -->
         </div>
         <h1
           id="typing-title"
@@ -49,11 +49,83 @@
         </div>
       </div>
 
+      <!-- Rutgers Position -->
       <div id="project-cards" :class="{ nonexistent: projectCardsNonexistent }">
+        <div class="row">
+          <div class="col-md-6 card-col" style="justify-content: center;">
+            <div class="card" style="width: 50em;">
+              <div class="card-block">
+                <div class="card-title" style="margin-top: 1.5em 0;">
+                  <img
+                    class="company-logo"
+                    src="../static/rutgers-logo.svg"
+                    style="width: 9em; margin: .3em 0;"
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div style="margin:1em;">
+                      <h5 class="card-subtitle">Web Applications Developer</h5>
+                      <div class="card-text">
+                        September 2022 - Present
+                      </div>
+
+                      <div class="card-buttons">
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark"
+                          @click="popupWAD"
+                        >
+                          More Info
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Comcast Position -->
+          <div class="col-md-6 card-col" style="justify-content: center;">
+            <div class="card" style="width: 50em;">
+              <div class="card-block">
+                <div class="card-title" style="margin-top: 1.5em 0;">
+                  <img
+                    class="company-logo"
+                    src="../static/comcast-logo.svg"
+                    style="width: 9em; margin: .3em 0;"
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div style="margin:1em;">
+                      <h5 class="card-subtitle">Software Developer I</h5>
+                      <div class="card-text">
+                        April 2021 - September 2022
+                      </div>
+
+                      <div class="card-buttons">
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark"
+                          @click="popupSDI"
+                        >
+                          More Info
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
           <!-- <div class="col-md-2"></div> -->
           <div class="col-md-12 card-col" style="justify-content: center;">
-            <div class="card" style="width: 50em;">
+            <div class="card" style="width: 60em;">
               <div class="card-block">
                 <div class="card-title" style="margin-top: 1.5em 0;">
                   <img
@@ -65,7 +137,7 @@
                 <div class="row">
                   <div class="col-lg-4">
                     <div style="margin:1em;">
-                      <h5 class="card-subtitle">GIS Junior Web Developer</h5>
+                      <h5 class="card-subtitle">Junior Web Developer</h5>
                       <div class="card-text">
                         August 2020 - December 2020
                       </div>
@@ -83,7 +155,9 @@
                   </div>
                   <div class="col-lg-4">
                     <div style="margin:1em;">
-                      <h5 class="card-subtitle">GIS Junior Applications Developer</h5>
+                      <h5 class="card-subtitle">
+                        Junior Applications Developer
+                      </h5>
                       <div class="card-text">August 2019 - August 2020</div>
 
                       <div class="card-buttons">
@@ -144,6 +218,8 @@
           </project-card>
         </div> -->
 
+        <br />
+        <br />
         <div class="row">
           <project-card
             title="Classroom Helper Discord Bot"
@@ -220,10 +296,10 @@
             right-button-href=""
             right-button-text=""
           >
-            I frequently enjoy watching movies with friends, and decided
-            to try creating my own video watching web app. Video Us is an 
-            application that allows users to create rooms, invite friends, 
-            and synchronously play videos at the touch of a button.
+            I frequently enjoy watching movies with friends, and decided to try
+            creating my own video watching web app. Video Us is an application
+            that allows users to create rooms, invite friends, and synchronously
+            play videos at the touch of a button.
           </project-card>
         </div>
         <div>
@@ -333,15 +409,52 @@ export default {
       })
     },
 
+    popupWAD() {
+      const innerHTML =
+        '<p>Working as a Web Applications Developer as part of the Rutgers Continuing Studies Division is my most recent and current role! ' +
+        "Due to our small team size, I'm able to take on more of an independent role in software development. This means designing our " +
+        "product's roadmap, making major decisions on how we want the user to interact with our applications, and being responsible for developing larger " +
+        "pieces of the frontend and backend infrastructure! Here's what I put on my resume about it: <br><br>" +
+        '<ul style="text-align: left;"><li>Composed a product roadmap supplemented by user stories to ensure timely delivery of major and minor functionality.</li>' +
+        '<li>Mapped user flow and designed 15+ web pages using <b>Adobe XD</b> and <b>Excalidraw</b> following UI/UX best practices.</li>' +
+        '<li>Workshopped UI components through <b>Storybook</b> and implemented them as reusable <b>React</b> components using <b>Typescript</b> and <b>Tailwind CSS</b>.</li>' +
+        '<li>Developed resilient backend infrastructure to manage user interaction using <b>Prisma</b>, <b>tRPC</b>, and <b>PostgreSQL</b>, processing simultaneous requests across 34 departments.</li>' +
+        '</ul></p>'
+      Popup.fire({
+        html: innerHTML,
+        imageUrl: ''
+      })
+    },
+
+    // Finally, towards the end of my time there, as our platform grew and we were receiving end user support requests at an increased rate, ' +
+    // 'I designed a future in-house Contact-Us application for our sales team to quickly look up solutions or ask us questions without using a messy Slack channel as an intermediary
+
+    popupSDI() {
+      const innerHTML =
+        '<p>For my first major development role outside of school, I was able to become part of an amazing team over at Comcast Business. ' +
+        'Originally I used Angular and Jasmine to help to build an automation platform for customers to set-up defined networks with. As time went on though, I was able to assist in backend user stories as well, ' +
+        "learning Java and Springboot to be able to take on more work. Finally towards the end of my time there, while I was able to do so much more, the part I'm proudest of was taking on a mentorship role for two of our junior developers, " +
+        "assisting them in learning our application's architecture and generally helping them grow. Here's what I have to say on my resume about it: <br><br>" +
+        '<ul style="text-align: left;"><li>Built an <b>Angular</b> application to simplify multi-team communication, reducing deployment issues by 25% and downtime by 8+ hours weekly.</li>' +
+        '<li>Fabricated 80+ automated tests for frontend and backend features using <b>Jasmine</b>, <b>Karma</b>, and <b>JUnit</b>, noticeably decreasing end user support issues.</li>' +
+        '<li>Provisioned components across three Angular applications using responsive design best practices to meet end users’ needs and goals.</li>' +
+        '<li>Mentored junior developers through weekly one-on-one meetings and pair programming, helping them become accustomed to our team’s procedures, application architecture, and coding practices.</li>' +
+        '<li>Provided end users around the clock support ensuring that in-app issues are resolved in a timely fashion, reducing total customer impact or delay by ~12 hours weekly</li>' +
+        '</ul></p>'
+      Popup.fire({
+        html: innerHTML,
+        imageUrl: ''
+      })
+    },
+
     popupGJM() {
       const innerHTML =
-        '<p>Working as a junior web developer at the Washington College GIS Labs was my most recent and interesting internship! ' +
-        'After being from promoted from junior applications developer, I was able to work directly with the senior developer in a more leadership role. ' +
+        '<p>After being from promoted from junior applications developer, I was able to work directly with the senior developer in a larger web developer capacity. ' +
         'I shifted from working primarily with Python and Arcpy to working with Javascript, React, and front end development,' +
-        "as well as more in-depth backend development for our GeoEvent Server! Here's what I put on my resume about it: <br><br>" +
-        '<ul style="text-align: left;"><li>Designed and built a vehicle crash tracker web page using React and the ArcGIS API, enabling emergency responders to easily process, filter, and view 15+ years of Maryland crash data.</li>' +
-        '<li>Prototyped a web application for authenticated users to submit and view locations in GeoJSON files using JavaScript, HTML, CSS, and the Google Maps API.</li>' +
-        '<li>Achieved a ~5% increase in data retention through a new script using Pandas to process and query incoming JSON data from the Maryland Department of Transportation.</li>' +
+        " as well as more in-depth backend development for our GeoEvent Server! Here's just a few of the things I was able to do: <br><br>" +
+        '<ul style="text-align: left;"><li>Designed and built a vehicle crash tracker web page using <b>React</b> and the <b>ArcGIS API</b>, enabling emergency responders to easily process, filter, and view 15+ years of Maryland crash data.</li>' +
+        '<li>Prototyped an in-house web application for 25+ authenticated users to submit and view locations in GeoJSON files using <b>JavaScript</b>, <b>HTML</b>, <b>CSS</b>, and the <b>Google Maps API</b>.</li>' +
+        '<li>Achieved a ~5% increase in data retention through a new script using <b>Pandas</b> to process and query incoming JSON data from the Maryland Department of Transportation.</li>' +
         '</ul></p>'
       Popup.fire({
         html: innerHTML,
@@ -355,8 +468,8 @@ export default {
         "using Python and Arcpy, Esri's Python library, and quickly moved to creating full scale python scripts to easily automate " +
         'a large amount of data processing. During the summer of 2020 I began working with Sean Lynn, the senior applications developer, ' +
         ' and shifted to developing backend data-processing and MySQL database storage for our GeoEvent server. ' +
-        " Here's what I put on my resume about it:<br><br>" +
-        '<ul style="text-align: left;"><li>Independently responsible for creating, maintaining, and continuously expanding a toolbox containing 20+ user-friendly geoprocessing Python tools and software that sifts, analyzes, and displays data findings in multiple formats.</li>' +
+        " Here's just a few of the things I was able to do:<br><br>" +
+        '<ul style="text-align: left;"><li>Independently responsible for creating, maintaining, and continuously expanding a toolbox containing 20+ user-friendly geoprocessing <b>Python</b> tools and software that sifts, analyzes, and displays data findings in multiple formats.</li>' +
         '<li>Collaborated with GIS analysts to automate manual processes and increase deliverables production by ~10%.</li>' +
         '<li>Redesigned UI options on existing geospatial analysis scripts to adhere to a wider range of needs.</li>' +
         '</ul></p>'
@@ -371,7 +484,7 @@ export default {
         "<p>My first internship took place at my school's engineering center Ideaworks. " +
         'I was primarily responsible for overseeing the use of the equipment and helping   ' +
         "students use the engineering equipment.​ Although it wasn't an official part of the internship, " +
-        "I was also able to assist faculty in teaching students engineering principles through fun projects.</p>"
+        'I was also able to assist faculty in teaching students engineering principles through fun projects.</p>'
       Popup.fire({
         html: innerHTML,
         imageUrl: ''
