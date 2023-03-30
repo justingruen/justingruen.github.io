@@ -9,7 +9,7 @@
     <div class="container">
       <div class="full-title">
         <div class="profile">
-          <!-- <img src="../static/Me2.png" class="profile-pic" alt="Justin Gruen" /> -->
+          <img src="../static/Me.png" class="profile-pic" alt="Justin Gruen" />
         </div>
         <h1
           id="typing-title"
@@ -415,10 +415,10 @@ export default {
         "Due to our small team size, I'm able to take on more of an independent role in software development. This means designing our " +
         "product's roadmap, making major decisions on how we want the user to interact with our applications, and being responsible for developing larger " +
         "pieces of the frontend and backend infrastructure! Here's what I put on my resume about it: <br><br>" +
-        '<ul style="text-align: left;"><li>Composed a product roadmap supplemented by user stories to ensure timely delivery of major and minor functionality.</li>' +
-        '<li>Mapped user flow and designed 15+ web pages using <b>Adobe XD</b> and <b>Excalidraw</b> following UI/UX best practices.</li>' +
-        '<li>Workshopped UI components through <b>Storybook</b> and implemented them as reusable <b>React</b> components using <b>Typescript</b> and <b>Tailwind CSS</b>.</li>' +
-        '<li>Developed resilient backend infrastructure to manage user interaction using <b>Prisma</b>, <b>tRPC</b>, and <b>PostgreSQL</b>, processing simultaneous requests across 34 departments.</li>' +
+        '<ul style="text-align: left;"><li> Led development of a recruiting platform employed across 34 departments, overseeing timely feature delivery, custom UI/UX implementation, and resilient back end architecture.</li>' +
+        '<li>Created, tested, and modified a library of common React components using Storybook, Typescript, and Tailwind CSS for use in existing codebases.</li>' +
+        '<li> Composed a feature roadmap and introduced Agile methodologies through the implementation of a user story pipeline, increasing code quality and speed of delivery.</li>' +
+        '<li> Interfaced with design team to create prototypes of major and minor features, alongside ensuring compliance with ADA standards</li>' +
         '</ul></p>'
       Popup.fire({
         html: innerHTML,
@@ -435,10 +435,10 @@ export default {
         'Originally I used Angular and Jasmine to help to build an automation platform for customers to set-up defined networks with. As time went on though, I was able to assist in backend user stories as well, ' +
         "learning Java and Springboot to be able to take on more work. Finally towards the end of my time there, while I was able to do so much more, the part I'm proudest of was taking on a mentorship role for two of our junior developers, " +
         "assisting them in learning our application's architecture and generally helping them grow. Here's what I have to say on my resume about it: <br><br>" +
-        '<ul style="text-align: left;"><li>Built an <b>Angular</b> application to simplify multi-team communication, reducing deployment issues by 25% and downtime by 8+ hours weekly.</li>' +
-        '<li>Fabricated 80+ automated tests for frontend and backend features using <b>Jasmine</b>, <b>Karma</b>, and <b>JUnit</b>, noticeably decreasing end user support issues.</li>' +
-        '<li>Provisioned components across three Angular applications using responsive design best practices to meet end users’ needs and goals.</li>' +
-        '<li>Mentored junior developers through weekly one-on-one meetings and pair programming, helping them become accustomed to our team’s procedures, application architecture, and coding practices.</li>' +
+        '<ul style="text-align: left;"><li> Leveraged CI/CD pipelines to prototype an in-house application to simplify weekly deployments, reducing deployment overhead, minimizing downtime, and increasing app availability.</li>' +
+        '<li>Provisioned components and bug fixes across three Angular codebases, and RESTful API’s across multiple Java microservices.</li>' +
+        '<li>Trained and mentored junior engineers joining the team, working with them through pair programming and weekly one-on-one meetings.</li>' +
+        '<li> Achieved a 50% reduction in user support tickets and developer maintenance through integration of testing suites for both front end and back end codebases.</li>' +
         '<li>Provided end users around the clock support ensuring that in-app issues are resolved in a timely fashion, reducing total customer impact or delay by ~12 hours weekly</li>' +
         '</ul></p>'
       Popup.fire({
@@ -602,7 +602,7 @@ body {
 }
 
 .profile-pic {
-  height: 130px;
+  height: 180px;
   border-radius: 50%;
 }
 
