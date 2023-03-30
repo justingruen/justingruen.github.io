@@ -31,7 +31,7 @@
           </span>
           <br />
           <span>
-            <a target="_blank" href="justingruen-resume.pdf">Resume</a>
+            <a target="_blank" href="JustinGruen.pdf">Resume</a>
           </span>
           •
           <span>
