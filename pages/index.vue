@@ -49,10 +49,41 @@
         </div>
       </div>
 
-      <!-- Rutgers Position -->
       <div id="project-cards" :class="{ nonexistent: projectCardsNonexistent }">
         <div class="row">
-          <div class="col-md-6 card-col" style="justify-content: center;">
+          <!-- Balzard Position -->
+          <div class="col-md-4 card-col" style="justify-content: center;">
+            <div class="card" style="width: 50em;">
+              <div class="card-block">
+                <div class="card-title" style="margin-top: 1.5em 0;">
+                  <h1><b>BALZARD</b></h1>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div style="margin:1em;">
+                      <h5 class="card-subtitle">Front End Developer</h5>
+                      <div class="card-text">
+                        September 2022 - Present
+                      </div>
+
+                      <div class="card-buttons">
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark"
+                          @click="popupFED"
+                        >
+                          More Info
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rutgers Position -->
+          <div class="col-md-4 card-col" style="justify-content: center;">
             <div class="card" style="width: 50em;">
               <div class="card-block">
                 <div class="card-title" style="margin-top: 1.5em 0;">
@@ -87,7 +118,7 @@
           </div>
 
           <!-- Comcast Position -->
-          <div class="col-md-6 card-col" style="justify-content: center;">
+          <div class="col-md-4 card-col" style="justify-content: center;">
             <div class="card" style="width: 50em;">
               <div class="card-block">
                 <div class="card-title" style="margin-top: 1.5em 0;">
@@ -135,9 +166,9 @@
                   />
                 </div>
                 <div class="row">
-                  <div class="col-lg-4">
+                  <div class="col-lg-6">
                     <div style="margin:1em;">
-                      <h5 class="card-subtitle">Junior Web Developer</h5>
+                      <h5 class="card-subtitle">Front End Developer</h5>
                       <div class="card-text">
                         August 2020 - December 2020
                       </div>
@@ -153,10 +184,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-6">
                     <div style="margin:1em;">
                       <h5 class="card-subtitle">
-                        Junior Applications Developer
+                        Applications Developer
                       </h5>
                       <div class="card-text">August 2019 - August 2020</div>
 
@@ -165,24 +196,6 @@
                           type="button"
                           class="btn btn-outline-dark"
                           @click="popupGSA"
-                        >
-                          More Info
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div style="margin:1em;">
-                      <h5 class="card-subtitle">Ideaworks Consultant</h5>
-                      <div class="card-text">
-                        August 2019 - December 2020
-                      </div>
-
-                      <div class="card-buttons">
-                        <button
-                          type="button"
-                          class="btn btn-outline-dark"
-                          @click="popupIWC"
                         >
                           More Info
                         </button>
@@ -409,10 +422,22 @@ export default {
       })
     },
 
+    popupFED() {
+      const innerHTML =
+        '<p>My most recent (and exciting!) role is as a front end developer at Balzard LLC. Moving away from larger institutions, Balzard is a brand new startup ' +
+        'aimed at helping museums and small businesses by bringing their tech into the modern day. This might mean redesigning their websites, implementing new functions to manage their customer base, ' +
+        'or creating new experiences to keep customers interested and engaged.' +
+        'No matter which, I am extremely proud to be able to be a part of something that looks to help communities and make the world a better place. ' +
+        "As of yet this is still a new role and I look forward to updating my resume in the future with more about what I've accomplished!</p>"
+      Popup.fire({
+        html: innerHTML,
+        imageUrl: ''
+      })
+    },
+
     popupWAD() {
       const innerHTML =
-        '<p>Working as a Web Applications Developer as part of the Rutgers Continuing Studies Division is my most recent and current role! ' +
-        "Due to our small team size, I'm able to take on more of an independent role in software development. This means designing our " +
+        "<p>After Comcast I moved to Rutgers University's Division of Continuing Studies where I was able to take on more of an independent role in software development. This meant designing our " +
         "product's roadmap, making major decisions on how we want the user to interact with our applications, and being responsible for developing larger " +
         "pieces of the frontend and backend infrastructure! Here's what I put on my resume about it: <br><br>" +
         '<ul style="text-align: left;"><li> Led development of a recruiting platform employed across 34 departments, overseeing timely feature delivery, custom UI/UX implementation, and resilient back end architecture.</li>' +
@@ -431,7 +456,7 @@ export default {
 
     popupSDI() {
       const innerHTML =
-        '<p>For my first major development role outside of school, I was able to become part of an amazing team over at Comcast Business. ' +
+        '<p>For my first major development role as part of a larger org, I was able to become part of an amazing team over at Comcast Business. ' +
         'Originally I used Angular and Jasmine to help to build an automation platform for customers to set-up defined networks with. As time went on though, I was able to assist in backend user stories as well, ' +
         "learning Java and Springboot to be able to take on more work. Finally towards the end of my time there, while I was able to do so much more, the part I'm proudest of was taking on a mentorship role for two of our junior developers, " +
         "assisting them in learning our application's architecture and generally helping them grow. Here's what I have to say on my resume about it: <br><br>" +
@@ -452,9 +477,9 @@ export default {
         '<p>After being from promoted from junior applications developer, I was able to work directly with the senior developer in a larger web developer capacity. ' +
         'I shifted from working primarily with Python and Arcpy to working with Javascript, React, and front end development,' +
         " as well as more in-depth backend development for our GeoEvent Server! Here's just a few of the things I was able to do: <br><br>" +
-        '<ul style="text-align: left;"><li>Designed and built a vehicle crash tracker web page using <b>React</b> and the <b>ArcGIS API</b>, enabling emergency responders to easily process, filter, and view 15+ years of Maryland crash data.</li>' +
-        '<li>Prototyped an in-house web application for 25+ authenticated users to submit and view locations in GeoJSON files using <b>JavaScript</b>, <b>HTML</b>, <b>CSS</b>, and the <b>Google Maps API</b>.</li>' +
-        '<li>Achieved a ~5% increase in data retention through a new script using <b>Pandas</b> to process and query incoming JSON data from the Maryland Department of Transportation.</li>' +
+        '<ul style="text-align: left;"><li>Designed and built a vehicle crash tracker web page using React and the ArcGIS API, enabling emergency responders to easily process, filter, and view 15+ years of Maryland crash data.</li>' +
+        '<li>Prototyped an in-house web application for 25+ authenticated users to submit and view locations in GeoJSON files using JavaScript, HTML, CSS, and the Google Maps API.</li>' +
+        '<li>Collaborated with GIS analysts to automate manual processes and increase deliverables production by ~20%.</li>' +
         '</ul></p>'
       Popup.fire({
         html: innerHTML,
@@ -464,27 +489,14 @@ export default {
 
     popupGSA() {
       const innerHTML =
-        '<p>My second internship was at the Washington College GIS Labs as a junior applications developer. I started out analyzing data ​' +
-        "using Python and Arcpy, Esri's Python library, and quickly moved to creating full scale python scripts to easily automate " +
-        'a large amount of data processing. During the summer of 2020 I began working with Sean Lynn, the senior applications developer, ' +
-        ' and shifted to developing backend data-processing and MySQL database storage for our GeoEvent server. ' +
-        " Here's just a few of the things I was able to do:<br><br>" +
-        '<ul style="text-align: left;"><li>Independently responsible for creating, maintaining, and continuously expanding a toolbox containing 20+ user-friendly geoprocessing <b>Python</b> tools and software that sifts, analyzes, and displays data findings in multiple formats.</li>' +
+        "<p>My first major role was as an applications developer with Washington College's GIS Labs. I started out analyzing data ​using " +
+        "Python and Arcpy, Esri's Python library, and quickly moved to creating full scale python scripts to easily automate a large amount " +
+        'of data processing. During the summer of 2020 I began working with Sean Lynn, the senior web developer, and shifted to developing ' +
+        "backend data-processing and MySQL database storage for our GeoEvent server. Here's just a few of the things I was able to do:<br><br>" +
+        '<ul style="text-align: left;"><li>Independently responsible for creating, maintaining, and continuously expanding a toolbox containing 20+ user-friendly geoprocessing Python tools and software that sifts, analyzes, and displays data findings in multiple formats.</li>' +
         '<li>Collaborated with GIS analysts to automate manual processes and increase deliverables production by ~10%.</li>' +
         '<li>Redesigned UI options on existing geospatial analysis scripts to adhere to a wider range of needs.</li>' +
         '</ul></p>'
-      Popup.fire({
-        html: innerHTML,
-        imageUrl: ''
-      })
-    },
-
-    popupIWC() {
-      const innerHTML =
-        "<p>My first internship took place at my school's engineering center Ideaworks. " +
-        'I was primarily responsible for overseeing the use of the equipment and helping   ' +
-        "students use the engineering equipment.​ Although it wasn't an official part of the internship, " +
-        'I was also able to assist faculty in teaching students engineering principles through fun projects.</p>'
       Popup.fire({
         html: innerHTML,
         imageUrl: ''
